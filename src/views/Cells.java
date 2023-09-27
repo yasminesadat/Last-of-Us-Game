@@ -32,10 +32,11 @@ import javafx.scene.paint.Color;
 import javafx.scene.paint.ImagePattern;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Font;
+import javafx.stage.Screen;
 
 public class Cells extends Rectangle {
 
-	private static final double d = 71; // dimension of cell for 16.1in screen
+	private static final double d = Screen.getPrimary().getBounds().getWidth()/27.04225352112676; // dimension of cell 
 	public static Hero selected = null;
 	static int colPos, rowPos;
 	public static ArrayList<Cells> curedCells = new ArrayList<Cells>(); // cured
